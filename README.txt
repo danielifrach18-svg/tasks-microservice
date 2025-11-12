@@ -25,16 +25,11 @@ TASK_MAX_RETRIES=3
 
 Note:
 MAX_WORKERS is not defined here, but in src/config/config.ts
-There it is set automatically based on the number of CPU cores (os.cpus().length)
-
+There it is set automatically based on the number of CPU cores
 
 
 ## Logs
 - Shared worker-task log (each worker appends task entries): `logs/shared-logs.txt`
-
-## Notes
-- Worker pool maximum is CPU cores (automatic).
-- `async-mutex` used to synchronize writes to `shared-logs.txt`.
 
 
 ## Run
